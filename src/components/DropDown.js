@@ -33,7 +33,7 @@ function DropDown({ options, value, onChange }) {
 
   const renderedOptions = options.map((option) => {
     return (
-      <div className="hover:bg-sky-100 rouned cursor-pointer p-1" onClick={() => handleOptionsClick(option)} key={option.valie}>
+      <div className="hover:bg-sky-100 rouned cursor-pointer p-1" onClick={() => handleOptionsClick(option)} key={option.value}>
         {option.label}
         <span className="text-gray-500 ml-2">{option.value}</span>
       </div>
