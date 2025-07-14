@@ -4,6 +4,7 @@ import DropDownPage from "./pages/DropDownPage.js";
 import Sidebar from "./components/Sidebar.js";
 import ButtonPage from "./pages/ButtonPage.js";
 import ModalPage from "./pages/ModalPage.js";
+import TablePage from "./pages/TablePage.js";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/modal">
           <ModalPage />
+        </Route>
+        <Route path="/table">
+          <TablePage />
         </Route>
       </div>
     </div>
