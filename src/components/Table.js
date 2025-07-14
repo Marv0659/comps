@@ -1,7 +1,10 @@
-"react-dom";
+import { Fragment } from "react";
 
 function Table({ data, config, keyFn }) {
   const renderedheaders = config.map((column) => {
+    if (column.header) {
+      return <Fragment key={column.label}>{column.header()}</Fragment>;
+    }
     return (
       <th key={column.label} className="p-3">
         {column.label}
